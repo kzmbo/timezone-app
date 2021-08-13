@@ -6,7 +6,7 @@ function App() {
   return (
     <div id="content">
       <Header />
-      <TimezoneCard time={`${date.toLocaleTimeString()}`}/>
+      <TimezoneCard time={date}/>
     </div>
   );
 }

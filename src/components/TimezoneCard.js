@@ -8,7 +8,7 @@ const TimezoneCard = ( { time } ) => {
         <div id="timezone-card">
             <Time time={time}/>
             <Location />
-            <Clock />
+            <Clock time={time}/>
         </div>
     )
 }

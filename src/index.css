@@ -121,7 +121,6 @@ code {
   width: 2px;
   height: 70px;
   background-color: salmon;
-  transform: rotate(90deg);
   transform-origin: 100% 100%;
 
   transition: ease-in 0.2s;
@@ -132,4 +131,13 @@ code {
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+
+#img-box {
+  margin-top: 45px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
