@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,3 +15,121 @@ code {
     monospace;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-box {
+  font-size: 44px;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 0;
+}
+
+#header-title {
+  margin-top: 30px;
+}
+
+#timezone-card {
+  position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  background-color: rgba(123, 123, 123, 0.16);
+  height: 400px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in 0.2s;
+}
+
+#timezone-card:hover {
+  background-color: rgba(123, 123, 123, 0.35);
+  border: 1px solid rgba(123, 123, 123, 0.5);
+}
+
+#time-box {
+  margin-top: 30px;
+}
+
+#time-text {
+  margin: 0;
+  font-size: 45px;
+}
+
+#location-text {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 25px;
+  font-style: italic;
+  color: #DFDFDF;
+}
+
+
+#clock-outside-border {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: #C4CCDC;
+  border-radius: 50%;
+  top:25%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#clock-inside {
+  content: "";
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#clock-hour-hand {
+  content: "";
+  width: 2px;
+  height: 70px;
+  background-color: rgb(110, 110, 110);
+  position: absolute;
+	
+  top: 0;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#clock-minute-hand {
+  content: "";
+  width: 2px;
+  height: 70px;
+  background-color: salmon;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+
+  transition: ease-in 0.2s;
+
+  position: absolute;
+  top: 0;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

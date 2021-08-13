@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div>
-            <h1>Kembo's Timezone</h1>
+        <div id="header-box">
+            <h1 id="header-title">Kembo's Timezone</h1>
         </div>
     )
 }

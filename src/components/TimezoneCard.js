@@ -5,10 +5,10 @@ import Location from './Location'
 
 const TimezoneCard = ( { time } ) => {
     return (
-        <div>
+        <div id="timezone-card">
             <Time time={time}/>
-            <Clock />
             <Location />
+            <Clock />
         </div>
     )
 }
