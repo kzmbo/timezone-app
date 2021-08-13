@@ -4,8 +4,9 @@ import sun from '../pictures/sun.png'
 
 const Clock = ( {time} ) => {
     function checkTime(){
-        if(time.getHours() >= 19) return <img src={moon}></img>
-        if(time.getHours() >= 8) return <img src={sun}></img>
+        let hour = time.getHours()
+        if(hour >= 19 || hour < 7) return <img src={moon}></img>
+        if(hour < 19 && hour >= 7) return <img src={sun}></img>
     }
     
     return (
